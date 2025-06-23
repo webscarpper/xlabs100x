@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import CandlestickChart from "./candlestick-chart";
+import heroImage from "@assets/WhatsApp Image 2025-06-23 at 09.52.05_39ead9f8_1750665480428.jpg";
+import logoImage from "@assets/100xLabs LOGO full res_1750665480428.png";
 
 export default function HeroSection() {
   const scrollToSection = (sectionId: string) => {
@@ -10,14 +12,22 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="hero-bg min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+    <section 
+      className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20"
+      style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${heroImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
       {/* Animated Candlestick Chart Background */}
       <CandlestickChart />
       
       {/* Central Glowing X */}
       <div className="absolute inset-0 flex items-center justify-center">
         <motion.div 
-          className="w-64 h-64 opacity-20"
+          className="w-64 h-64 opacity-30"
           animate={{ 
             y: [0, -10, 0],
           }}
@@ -27,9 +37,11 @@ export default function HeroSection() {
             ease: "easeInOut"
           }}
         >
-          <div className="w-full h-full bg-[var(--neon-green)] rounded-xl shadow-2xl flex items-center justify-center glow-green">
-            <span className="text-crypto-black font-black text-8xl">X</span>
-          </div>
+          <img 
+            src={logoImage} 
+            alt="100xlabs glowing X logo" 
+            className="w-full h-full object-contain glow-green"
+          />
         </motion.div>
       </div>
       

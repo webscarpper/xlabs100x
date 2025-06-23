@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import logoImage from "@assets/100xLabs LOGO full res_1750665480428.png";
 
 export default function Footer() {
   return (
@@ -12,9 +13,11 @@ export default function Footer() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <div className="w-10 h-10 bg-[var(--neon-green)] rounded-lg flex items-center justify-center">
-              <span className="text-crypto-black font-black text-xl">X</span>
-            </div>
+            <img 
+              src={logoImage} 
+              alt="100xlabs logo" 
+              className="w-10 h-10"
+            />
             <span className="text-2xl font-black text-white">
               100<span className="text-[var(--neon-green)]">X</span>labs
             </span>

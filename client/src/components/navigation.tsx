@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import logoImage from "@assets/100xLabs LOGO full res_1750665480428.png";
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -40,9 +41,11 @@ export default function Navigation() {
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
-            <div className="w-10 h-10 bg-[var(--neon-green)] rounded-lg flex items-center justify-center animate-pulse-green">
-              <span className="text-crypto-black font-black text-xl">X</span>
-            </div>
+            <img 
+              src={logoImage} 
+              alt="100xlabs logo" 
+              className="w-10 h-10 animate-pulse-green"
+            />
             <span className="text-2xl font-black text-white">
               100<span className="text-[var(--neon-green)]">X</span>labs
             </span>
