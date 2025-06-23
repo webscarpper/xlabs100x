@@ -30,34 +30,34 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
 
   return (
     <div className="fixed inset-0 bg-crypto-black z-50 flex items-center justify-center">
-      <div className="relative">
-        {/* Candlestick Body */}
-        <motion.div
-          className="w-8 bg-[var(--neon-green)] mx-auto"
-          initial={{ height: 0 }}
-          animate={{ height: 120 }}
-          transition={{ 
-            duration: 1.5, 
-            ease: "easeOut",
-            delay: 0.2
-          }}
-        />
-        
+      <div className="relative flex flex-col items-center">
         {/* Candlestick Wick (Top) */}
         <motion.div
-          className="w-1 bg-[var(--neon-green)] mx-auto"
+          className="w-1 bg-[var(--neon-green)]"
           initial={{ height: 0 }}
           animate={{ height: 20 }}
           transition={{ 
-            duration: 0.3, 
+            duration: 0.4, 
             ease: "easeOut",
-            delay: 1.4
+            delay: 0.1
+          }}
+        />
+        
+        {/* Candlestick Body */}
+        <motion.div
+          className="w-8 bg-[var(--neon-green)]"
+          initial={{ height: 0 }}
+          animate={{ height: 120 }}
+          transition={{ 
+            duration: 1.2, 
+            ease: "easeOut",
+            delay: 0.5
           }}
         />
         
         {/* Candlestick Wick (Bottom) */}
         <motion.div
-          className="w-1 bg-[var(--neon-green)] mx-auto"
+          className="w-1 bg-[var(--neon-green)]"
           initial={{ height: 0 }}
           animate={{ height: 15 }}
           transition={{ 
@@ -75,21 +75,9 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
           transition={{ 
             duration: 1.8, 
             ease: "easeOut",
-            delay: 0.1
+            delay: 0.2
           }}
         />
-        
-        {/* Loading Text */}
-        <motion.div
-          className="absolute top-full mt-8 left-1/2 transform -translate-x-1/2"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
-        >
-          <div className="text-white text-xl font-bold tracking-wider">
-            100<span className="text-[var(--neon-green)]">X</span>labs
-          </div>
-        </motion.div>
       </div>
     </div>
   );
