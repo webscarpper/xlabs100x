@@ -24,7 +24,7 @@ export default function CandlestickChart() {
   ];
 
   return (
-    <div className="absolute inset-0 overflow-visible opacity-40">
+    <div className="absolute inset-0 overflow-visible opacity-60">
       <div className="relative h-full w-full">
         {candlesticks.map((candle, index) => (
           <motion.div
@@ -33,8 +33,8 @@ export default function CandlestickChart() {
             style={{
               position: "absolute",
               left: candle.position,
-              bottom: "20%",
-              width: candle.isGodCandle ? "10px" : "8px",
+              bottom: "15%",
+              width: candle.isGodCandle ? "12px" : "10px",
             }}
             initial={{ height: "0%", opacity: 0 }}
             animate={{ 

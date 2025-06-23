@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import logoImage from "@assets/100xLabs LOGO full res_1750665480428.png";
+import titleLogo from "@assets/logooooo png_1750668831028.png";
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -37,18 +38,15 @@ export default function Navigation() {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <motion.div 
-            className="flex items-center space-x-3"
+            className="flex items-center"
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
             <img 
-              src={logoImage} 
-              alt="100xlabs logo" 
-              className="w-10 h-10 animate-pulse-green"
+              src={titleLogo} 
+              alt="100xlabs" 
+              className="h-8 w-auto animate-pulse-green"
             />
-            <span className="text-2xl font-black text-white">
-              100<span className="text-[var(--neon-green)]">X</span>labs
-            </span>
           </motion.div>
           
           {/* Desktop Navigation */}
