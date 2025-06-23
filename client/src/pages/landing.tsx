@@ -29,7 +29,7 @@ export default function Landing() {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            Ready to <span className="text-[var(--neon-green)] neon-text">100X</span> Your Project?
+            Ready to <span className="text-[var(--neon-green)]">100X</span> Your Project?
           </motion.h2>
           <motion.p 
             className="text-xl text-gray-300 mb-8"
