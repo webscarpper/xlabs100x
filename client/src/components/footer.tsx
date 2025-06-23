@@ -27,7 +27,6 @@ export default function Footer() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <p className="text-gray-400 mb-2">Ready to amplify your Web3 project?</p>
             <p className="text-sm text-gray-500">© 2025 100xlabs. All rights reserved.</p>
           </motion.div>
         </div>
