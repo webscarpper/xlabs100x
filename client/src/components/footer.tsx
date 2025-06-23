@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import logoImage from "@assets/100xLabs LOGO full res_1750665480428.png";
+import titleLogo from "@assets/Untitled design (1)_1750668996300.png";
 
 export default function Footer() {
   return (
@@ -7,20 +7,17 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <motion.div 
-            className="flex items-center space-x-3 mb-6 md:mb-0"
+            className="flex items-center mb-6 md:mb-0"
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
             <img 
-              src={logoImage} 
-              alt="100xlabs logo" 
-              className="w-10 h-10"
+              src={titleLogo} 
+              alt="100xlabs" 
+              className="h-12 w-auto"
             />
-            <span className="text-2xl font-black text-white">
-              100<span className="text-[var(--neon-green)]">X</span>labs
-            </span>
           </motion.div>
           
           <motion.div 
