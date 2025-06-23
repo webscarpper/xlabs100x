@@ -14,30 +14,6 @@ export default function HeroSection() {
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 bg-crypto-black"
     >
-      {/* Animated Candlestick Chart Background */}
-      <CandlestickChart />
-      
-      {/* Central Glowing X */}
-      <div className="absolute inset-0 flex items-center justify-center">
-        <motion.div 
-          className="w-64 h-64 opacity-30"
-          animate={{ 
-            y: [0, -10, 0],
-          }}
-          transition={{ 
-            duration: 3,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-        >
-          <img 
-            src={logoImage} 
-            alt="100xlabs glowing X logo" 
-            className="w-full h-full object-contain glow-green"
-          />
-        </motion.div>
-      </div>
-      
       {/* Hero Content */}
       <div className="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
         <motion.h1 
