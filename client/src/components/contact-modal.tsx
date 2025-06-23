@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Send } from "lucide-react";
 import { FaTelegram } from "react-icons/fa";
+import { useEffect } from "react";
 
 interface ContactModalProps {
   isOpen: boolean;
@@ -8,6 +9,21 @@ interface ContactModalProps {
 }
 
 export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
+  useEffect(() => {
+    if (isOpen) {
+      // Prevent body scroll when modal is open
+      document.body.style.overflow = 'hidden';
+    } else {
+      // Restore body scroll when modal is closed
+      document.body.style.overflow = 'unset';
+    }
+
+    // Cleanup function to restore scroll on unmount
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isOpen]);
+
   const handleTelegramClick = () => {
     window.open('https://t.me/locked_in_lucas', '_blank');
   };
@@ -17,6 +33,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
       {isOpen && (
         <motion.div
           className="fixed inset-0 z-50 flex items-center justify-center"
+          style={{ position: 'fixed' }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
