@@ -24,32 +24,30 @@ export default function CandlestickChart() {
   ];
 
   return (
-    <div className="absolute inset-0 overflow-hidden opacity-20">
-      <div className="relative h-full w-full flex items-center justify-center">
-        <div className="relative w-[120%] h-[60%] flex items-end justify-center">
-          {candlesticks.map((candle, index) => (
-            <motion.div
-              key={index}
-              className={`candlestick ${candle.isRed ? "red" : ""} ${candle.isGodCandle ? "god-candle" : ""}`}
-              style={{
-                position: "absolute",
-                left: candle.position,
-                bottom: "10%",
-                width: candle.isGodCandle ? "8px" : "6px",
-              }}
-              initial={{ height: "0%", opacity: 0 }}
-              animate={{ 
-                height: candle.height, 
-                opacity: 0.8 
-              }}
-              transition={{
-                duration: candle.isGodCandle ? 1.2 : 0.6,
-                delay: candle.delay,
-                ease: "easeOut"
-              }}
-            />
-          ))}
-        </div>
+    <div className="absolute inset-0 overflow-visible opacity-40">
+      <div className="relative h-full w-full">
+        {candlesticks.map((candle, index) => (
+          <motion.div
+            key={index}
+            className={`candlestick ${candle.isRed ? "red" : ""} ${candle.isGodCandle ? "god-candle" : ""}`}
+            style={{
+              position: "absolute",
+              left: candle.position,
+              bottom: "20%",
+              width: candle.isGodCandle ? "10px" : "8px",
+            }}
+            initial={{ height: "0%", opacity: 0 }}
+            animate={{ 
+              height: candle.height, 
+              opacity: 1 
+            }}
+            transition={{
+              duration: candle.isGodCandle ? 1.2 : 0.6,
+              delay: candle.delay,
+              ease: "easeOut"
+            }}
+          />
+        ))}
       </div>
     </div>
   );

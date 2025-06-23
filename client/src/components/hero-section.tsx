@@ -23,9 +23,11 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
         >
-          {/* Animated Candlestick Chart Background behind logo */}
-          <div className="absolute inset-0 flex items-center justify-center">
-            <CandlestickChart />
+          {/* Animated Candlestick Chart around logo */}
+          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div className="relative w-[150%] h-[120%]">
+              <CandlestickChart />
+            </div>
           </div>
           <img 
             src={titleLogo} 
