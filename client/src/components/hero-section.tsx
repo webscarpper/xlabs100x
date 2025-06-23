@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import CandlestickChart from "./candlestick-chart";
 import heroImage from "@assets/WhatsApp Image 2025-06-23 at 09.52.05_39ead9f8_1750665480428.jpg";
 import logoImage from "@assets/100xLabs LOGO full res_1750665480428.png";
+import titleLogo from "@assets/logooooo png_1750667728430.png";
 
 export default function HeroSection() {
   const scrollToSection = (sectionId: string) => {
@@ -16,15 +17,18 @@ export default function HeroSection() {
     >
       {/* Hero Content */}
       <div className="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-        <motion.h1 
-          className="text-5xl md:text-7xl font-black mb-6"
+        <motion.div 
+          className="mb-8"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
         >
-          Amplifying Web3 Projects by{" "}
-          <span className="text-[var(--neon-green)] neon-text">100X</span>
-        </motion.h1>
+          <img 
+            src={titleLogo} 
+            alt="100xlabs" 
+            className="w-auto h-32 md:h-48 mx-auto"
+          />
+        </motion.div>
         
         <motion.p 
           className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto"
