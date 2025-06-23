@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import CandlestickChart from "./candlestick-chart";
 import heroImage from "@assets/WhatsApp Image 2025-06-23 at 09.52.05_39ead9f8_1750665480428.jpg";
 import logoImage from "@assets/100xLabs LOGO full res_1750665480428.png";
-import titleLogo from "@assets/logooooo png_1750667728430.png";
+import titleLogo from "@assets/100xLabs banner_1750669246107.png";
 
 export default function HeroSection() {
   const scrollToSection = (sectionId: string) => {
