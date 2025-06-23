@@ -45,7 +45,7 @@ export default function Navigation() {
             <img 
               src={titleLogo} 
               alt="100xlabs" 
-              className="h-12 w-auto animate-pulse-green"
+              className="h-12 w-auto"
             />
           </motion.div>
           
