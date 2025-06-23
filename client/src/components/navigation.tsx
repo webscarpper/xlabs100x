@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import logoImage from "@assets/100xLabs LOGO full res_1750665480428.png";
-import titleLogo from "@assets/logooooo png_1750668831028.png";
+import titleLogo from "@assets/Untitled design (1)_1750668996300.png";
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -45,7 +45,7 @@ export default function Navigation() {
             <img 
               src={titleLogo} 
               alt="100xlabs" 
-              className="h-8 w-auto animate-pulse-green"
+              className="h-12 w-auto animate-pulse-green"
             />
           </motion.div>
           
