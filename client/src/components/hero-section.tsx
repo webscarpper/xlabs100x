@@ -15,21 +15,22 @@ export default function HeroSection() {
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 bg-crypto-black"
     >
-      {/* Animated Candlestick Chart Background */}
-      <CandlestickChart />
-      
       {/* Hero Content */}
       <div className="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
         <motion.div 
-          className="mb-8"
+          className="mb-8 relative"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
         >
+          {/* Animated Candlestick Chart Background behind logo */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <CandlestickChart />
+          </div>
           <img 
             src={titleLogo} 
             alt="100xlabs" 
-            className="w-auto h-66 md:h-102 lg:h-122 mx-auto"
+            className="w-auto h-66 md:h-102 lg:h-122 mx-auto relative z-10"
           />
         </motion.div>
 
