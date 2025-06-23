@@ -27,7 +27,7 @@ export default function HeroSection() {
             src={titleLogo} 
             alt="100xlabs" 
             className="w-full max-w-none h-auto"
-            style={{ width: '150%' }}
+            style={{ width: '112.5%' }}
           />
         </motion.div>
 
