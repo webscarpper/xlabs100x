@@ -73,7 +73,7 @@ export default function ClientsSection() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-5xl font-black mb-4">
-            <span className="text-[var(--neon-green)]">Clients</span>
+            ATH Stats From Our <span className="text-[var(--neon-green)]">Clients</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
             Real results from real projects. See how we've helped Web3 startups achieve massive growth and market success.
