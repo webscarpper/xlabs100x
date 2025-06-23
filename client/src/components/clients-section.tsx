@@ -66,13 +66,13 @@ export default function ClientsSection() {
     <section id="clients" className="py-20 bg-crypto-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.h2 
-          className="text-3xl md:text-4xl font-bold text-white mb-6 max-w-3xl mx-auto text-center"
+          className="text-4xl md:text-5xl font-black mb-6 max-w-3xl mx-auto text-center"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          Your catalyst for crypto growth
+          Your catalyst for <span className="text-[var(--neon-green)]">crypto growth</span>
         </motion.h2>
         
         <motion.p 
