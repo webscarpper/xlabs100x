@@ -64,7 +64,7 @@ export default function Navigation() {
             >
               Clients
             </button>
-            <FaXTwitter className="text-gray-400 h-6 w-6" />
+            <FaXTwitter className="text-gray-400 h-6 w-6 hover:text-[var(--neon-green)] transition-colors cursor-pointer" />
             <motion.button 
               onClick={() => scrollToSection("contact")}
               className="border-2 border-[var(--neon-green)] text-white px-6 py-2 rounded-xl font-bold hover:bg-[var(--neon-green)] hover:text-crypto-black transition-all"
@@ -105,7 +105,7 @@ export default function Navigation() {
               >
                 Clients
               </button>
-              <FaXTwitter className="text-gray-400 h-6 w-6" />
+              <FaXTwitter className="text-gray-400 h-6 w-6 hover:text-[var(--neon-green)] transition-colors cursor-pointer" />
               <button 
                 onClick={() => scrollToSection("contact")}
                 className="border-2 border-[var(--neon-green)] text-white px-6 py-2 rounded-xl font-bold hover:bg-[var(--neon-green)] hover:text-crypto-black transition-all text-left w-fit"
