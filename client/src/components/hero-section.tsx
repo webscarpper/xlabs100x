@@ -26,7 +26,7 @@ export default function HeroSection() {
           <img 
             src={titleLogo} 
             alt="100xlabs" 
-            className="w-auto h-52 md:h-80 lg:h-96 mx-auto"
+            className="w-auto h-78 md:h-120 lg:h-144 mx-auto"
           />
         </motion.div>
 
