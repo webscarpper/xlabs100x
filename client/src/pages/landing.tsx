@@ -1,5 +1,6 @@
 import Navigation from "@/components/navigation";
 import HeroSection from "@/components/hero-section";
+import CatalystSection from "@/components/catalyst-section";
 import ServicesSection from "@/components/services-section";
 import ClientsSection from "@/components/clients-section";
 import Footer from "@/components/footer";
@@ -14,6 +15,7 @@ export default function Landing() {
     <div className="min-h-screen bg-crypto-black text-white">
       <Navigation />
       <HeroSection />
+      <CatalystSection />
       <ClientsSection />
       <ServicesSection />
       
