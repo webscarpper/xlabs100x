@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import logoImage from "@assets/new-100xlabs-logo.png";
+import logoImage from "@assets/100xLabs LOGO full res_1750665480428.png";
 
 export default function Footer() {
   return (
