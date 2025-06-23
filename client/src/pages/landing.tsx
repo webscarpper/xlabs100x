@@ -50,7 +50,7 @@ export default function Landing() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Start Your 100X Journey
+            Contact Us
           </motion.a>
         </div>
       </motion.section>

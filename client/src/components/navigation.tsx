@@ -69,7 +69,7 @@ export default function Navigation() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Get Started
+              Contact Us
             </motion.button>
           </div>
           
@@ -107,7 +107,7 @@ export default function Navigation() {
                 onClick={() => scrollToSection("contact")}
                 className="bg-[var(--neon-green)] text-crypto-black px-6 py-2 rounded-lg font-semibold hover:bg-[var(--dark-green)] transition-colors text-left w-fit"
               >
-                Get Started
+                Contact Us
               </button>
             </div>
           </motion.div>
