@@ -53,13 +53,13 @@ export default function Navigation() {
           <div className="hidden md:flex space-x-8">
             <button 
               onClick={() => scrollToSection("services")}
-              className="text-gray-300 hover:text-[var(--neon-green)] transition-colors"
+              className="text-gray-300 hover:text-[var(--neon-green)] transition-colors font-bold"
             >
               Services
             </button>
             <button 
               onClick={() => scrollToSection("clients")}
-              className="text-gray-300 hover:text-[var(--neon-green)] transition-colors"
+              className="text-gray-300 hover:text-[var(--neon-green)] transition-colors font-bold"
             >
               Clients
             </button>
@@ -93,13 +93,13 @@ export default function Navigation() {
             <div className="flex flex-col space-y-4">
               <button 
                 onClick={() => scrollToSection("services")}
-                className="text-gray-300 hover:text-[var(--neon-green)] transition-colors text-left"
+                className="text-gray-300 hover:text-[var(--neon-green)] transition-colors text-left font-bold"
               >
                 Services
               </button>
               <button 
                 onClick={() => scrollToSection("clients")}
-                className="text-gray-300 hover:text-[var(--neon-green)] transition-colors text-left"
+                className="text-gray-300 hover:text-[var(--neon-green)] transition-colors text-left font-bold"
               >
                 Clients
               </button>
