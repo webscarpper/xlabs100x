@@ -5,19 +5,19 @@
 :root {
   --background: hsl(0, 0%, 0%);
   --foreground: hsl(0, 0%, 100%);
-  --muted: hsl(0, 0%, 10.2%);
+  --muted: hsl(0, 0%, 0%);
   --muted-foreground: hsl(0, 0%, 64.9%);
   --popover: hsl(0, 0%, 0%);
   --popover-foreground: hsl(0, 0%, 100%);
-  --card: hsl(0, 0%, 10.2%);
+  --card: hsl(0, 0%, 0%);
   --card-foreground: hsl(0, 0%, 100%);
   --border: hsl(0, 0%, 20%);
   --input: hsl(0, 0%, 20%);
   --primary: hsl(144, 85%, 35%);
   --primary-foreground: hsl(0, 0%, 0%);
-  --secondary: hsl(0, 0%, 10.2%);
+  --secondary: hsl(0, 0%, 0%);
   --secondary-foreground: hsl(0, 0%, 100%);
-  --accent: hsl(0, 0%, 16.3%);
+  --accent: hsl(0, 0%, 0%);
   --accent-foreground: hsl(0, 0%, 100%);
   --destructive: hsl(0, 84.2%, 60.2%);
   --destructive-foreground: hsl(0, 0%, 100%);
@@ -26,26 +26,26 @@
   --neon-green: hsl(144, 85%, 35%);
   --dark-green: hsl(144, 85%, 25%);
   --crypto-black: hsl(0, 0%, 0%);
-  --dark-gray: hsl(0, 0%, 10.2%);
+  --dark-gray: hsl(0, 0%, 0%);
   --chart-red: hsl(0, 85%, 63%);
 }
 
 .dark {
   --background: hsl(0, 0%, 0%);
   --foreground: hsl(0, 0%, 100%);
-  --muted: hsl(0, 0%, 10.2%);
+  --muted: hsl(0, 0%, 0%);
   --muted-foreground: hsl(0, 0%, 64.9%);
   --popover: hsl(0, 0%, 0%);
   --popover-foreground: hsl(0, 0%, 100%);
-  --card: hsl(0, 0%, 10.2%);
+  --card: hsl(0, 0%, 0%);
   --card-foreground: hsl(0, 0%, 100%);
   --border: hsl(0, 0%, 20%);
   --input: hsl(0, 0%, 20%);
   --primary: hsl(144, 85%, 35%);
   --primary-foreground: hsl(0, 0%, 0%);
-  --secondary: hsl(0, 0%, 10.2%);
+  --secondary: hsl(0, 0%, 0%);
   --secondary-foreground: hsl(0, 0%, 100%);
-  --accent: hsl(0, 0%, 16.3%);
+  --accent: hsl(0, 0%, 0%);
   --accent-foreground: hsl(0, 0%, 100%);
   --destructive: hsl(0, 84.2%, 60.2%);
   --destructive-foreground: hsl(0, 0%, 100%);
@@ -73,11 +73,11 @@
   }
   
   .hero-bg {
-    background: linear-gradient(135deg, hsl(0, 0%, 0%) 0%, hsl(0, 0%, 10.2%) 50%, hsl(0, 0%, 0%) 100%);
+    background: hsl(0, 0%, 0%);
   }
   
   .service-card {
-    background: linear-gradient(135deg, hsl(0, 0%, 10.2%) 0%, hsl(0, 0%, 20%) 100%);
+    background: hsl(0, 0%, 0%);
     border: 1px solid hsl(0, 0%, 20%);
     transition: all 0.3s ease;
   }
@@ -89,7 +89,7 @@
   }
   
   .client-card {
-    background: linear-gradient(135deg, hsl(0, 0%, 10.2%) 0%, hsl(0, 0%, 16.3%) 100%);
+    background: hsl(0, 0%, 0%);
     border: 1px solid hsl(0, 0%, 20%);
     transition: all 0.3s ease;
   }

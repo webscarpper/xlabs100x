@@ -15,7 +15,7 @@ export default function Landing() {
       
       {/* CTA Section */}
       <motion.section 
-        className="py-20 bg-gradient-to-r from-dark-gray to-crypto-black"
+        className="py-20 bg-crypto-black"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
