@@ -74,10 +74,9 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                 When messaging please include:
               </h3>
               <ul className="text-gray-300 space-y-2 text-sm">
-                <li>• Describe in detail what you are building</li>
-                <li>• Add all key information about your project</li>
-                <li>• Your goals and timeline</li>
-                <li>• How we can help you achieve 100X growth</li>
+                <li>• What you're building : vision, product, or protocol</li>
+                <li>• Core project details: team, stage, chain, funding</li>
+                <li>• Your goals & launch timeline</li>
               </ul>
             </div>
           </motion.div>
