@@ -67,7 +67,7 @@ export default function Navigation() {
             <FaXTwitter className="text-gray-400 h-6 w-6" />
             <motion.button 
               onClick={() => scrollToSection("contact")}
-              className="bg-[var(--neon-green)] text-crypto-black px-6 py-2 rounded-lg font-semibold hover:bg-[var(--dark-green)] transition-colors"
+              className="border-2 border-[var(--neon-green)] text-white px-6 py-2 rounded-xl font-bold hover:bg-[var(--neon-green)] hover:text-crypto-black transition-all"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -108,7 +108,7 @@ export default function Navigation() {
               <FaXTwitter className="text-gray-400 h-6 w-6" />
               <button 
                 onClick={() => scrollToSection("contact")}
-                className="bg-[var(--neon-green)] text-crypto-black px-6 py-2 rounded-lg font-semibold hover:bg-[var(--dark-green)] transition-colors text-left w-fit"
+                className="border-2 border-[var(--neon-green)] text-white px-6 py-2 rounded-xl font-bold hover:bg-[var(--neon-green)] hover:text-crypto-black transition-all text-left w-fit"
               >
                 Contact Us
               </button>
