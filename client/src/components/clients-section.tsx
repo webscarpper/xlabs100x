@@ -109,7 +109,7 @@ export default function ClientsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
-              whileHover={{ scale: 1.02 }}
+              whileHover={{ scale: 1.02, y: -5 }}
             >
               <div className="flex justify-between items-start mb-4">
                 <h3 className="text-xl font-bold text-white">{client.name}</h3>
