@@ -117,7 +117,7 @@ export default function ClientsSection() {
                   href={client.xLink} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-gray-300 transition-colors"
+                  className="text-gray-400 hover:text-[var(--neon-green)] transition-colors"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
                 >
