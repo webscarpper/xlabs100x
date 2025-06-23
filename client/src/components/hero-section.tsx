@@ -31,15 +31,6 @@ export default function HeroSection() {
           />
         </motion.div>
 
-        <motion.p 
-          className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.7 }}
-        >
-          Your catalyst for crypto growth. We turn emerging Web3 projects into market leaders through strategic marketing, community building, and industry connections.
-        </motion.p>
-
         <motion.div 
           className="flex flex-col sm:flex-row gap-4 justify-center"
           initial={{ opacity: 0, y: 20 }}
