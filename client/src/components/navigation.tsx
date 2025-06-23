@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import { FaXTwitter } from "react-icons/fa6";
 import logoImage from "@assets/100xLabs LOGO full res_1750665480428.png";
 import titleLogo from "@assets/Untitled design (1)_1750668996300.png";
 
@@ -63,7 +64,7 @@ export default function Navigation() {
             >
               Clients
             </button>
-            <X className="text-[var(--neon-green)] h-6 w-6" />
+            <FaXTwitter className="text-[var(--neon-green)] h-6 w-6" />
             <motion.button 
               onClick={() => scrollToSection("contact")}
               className="bg-[var(--neon-green)] text-crypto-black px-6 py-2 rounded-lg font-semibold hover:bg-[var(--dark-green)] transition-colors"
@@ -104,7 +105,7 @@ export default function Navigation() {
               >
                 Clients
               </button>
-              <X className="text-[var(--neon-green)] h-6 w-6" />
+              <FaXTwitter className="text-[var(--neon-green)] h-6 w-6" />
               <button 
                 onClick={() => scrollToSection("contact")}
                 className="bg-[var(--neon-green)] text-crypto-black px-6 py-2 rounded-lg font-semibold hover:bg-[var(--dark-green)] transition-colors text-left w-fit"
