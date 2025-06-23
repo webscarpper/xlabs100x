@@ -112,7 +112,7 @@ export default function ClientsSection() {
               whileHover={{ scale: 1.02 }}
             >
               <div className="flex justify-between items-start mb-4">
-                <h3 className="text-xl font-bold text-[var(--neon-green)]">{client.name}</h3>
+                <h3 className="text-xl font-bold text-white">{client.name}</h3>
                 <motion.a 
                   href={client.xLink} 
                   target="_blank" 
