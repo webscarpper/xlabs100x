@@ -16,11 +16,11 @@ router.post("/contact", async (req, res) => {
       return res.status(400).json({ error: "Name, email, and message are required" });
     }
 
-    // Create transporter (you'll need to configure this with your email service)
+    // Create transporter for Hostinger email
     const transporter = nodemailer.createTransporter({
-      host: process.env.SMTP_HOST || "smtp.gmail.com",
-      port: parseInt(process.env.SMTP_PORT || "587"),
-      secure: false,
+      host: process.env.SMTP_HOST || "smtp.hostinger.com",
+      port: parseInt(process.env.SMTP_PORT || "465"),
+      secure: true, // Use SSL for port 465
       auth: {
         user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASS,
