@@ -16,9 +16,9 @@ export default function HeroSection() {
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 bg-crypto-black"
     >
       {/* Hero Content */}
-      <div className="relative z-10 max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 mx-auto text-center px-4 sm:px-6 lg:px-8">
         <motion.div 
-          className="mb-8 relative w-full"
+          className="mb-8 relative w-full flex justify-center"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
@@ -26,7 +26,8 @@ export default function HeroSection() {
           <img 
             src={titleLogo} 
             alt="100xlabs" 
-            className="w-[200%] h-auto"
+            className="w-full max-w-none h-auto"
+            style={{ width: '200%' }}
           />
         </motion.div>
 
