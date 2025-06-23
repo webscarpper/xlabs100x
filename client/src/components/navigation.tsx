@@ -49,7 +49,7 @@ export default function Navigation() {
               className="h-12 w-auto"
             />
           </motion.div>
-          
+
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8 items-center">
             <button 
@@ -64,7 +64,7 @@ export default function Navigation() {
             >
               Clients
             </button>
-            <FaXTwitter className="text-[var(--neon-green)] h-6 w-6" />
+            <FaXTwitter className="text-gray-400 h-6 w-6" />
             <motion.button 
               onClick={() => scrollToSection("contact")}
               className="bg-[var(--neon-green)] text-crypto-black px-6 py-2 rounded-lg font-semibold hover:bg-[var(--dark-green)] transition-colors"
@@ -74,7 +74,7 @@ export default function Navigation() {
               Contact Us
             </motion.button>
           </div>
-          
+
           {/* Mobile Menu Button */}
           <button 
             className="md:hidden text-white"
@@ -83,7 +83,7 @@ export default function Navigation() {
             {isMobileMenuOpen ? <X /> : <Menu />}
           </button>
         </div>
-        
+
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <motion.div 
@@ -105,7 +105,7 @@ export default function Navigation() {
               >
                 Clients
               </button>
-              <FaXTwitter className="text-[var(--neon-green)] h-6 w-6" />
+              <FaXTwitter className="text-gray-400 h-6 w-6" />
               <button 
                 onClick={() => scrollToSection("contact")}
                 className="bg-[var(--neon-green)] text-crypto-black px-6 py-2 rounded-lg font-semibold hover:bg-[var(--dark-green)] transition-colors text-left w-fit"
