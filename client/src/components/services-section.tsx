@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Users, Zap, Heart, Rocket, Handshake, Network, Code } from "lucide-react";
+import { Users, Brain, Heart, Rocket, DollarSign, Network, Code } from "lucide-react";
 
 const services = [
   {
@@ -13,7 +13,7 @@ const services = [
     deliverable: "High-ROI influencer runs, without middlemen"
   },
   {
-    icon: Zap,
+    icon: Brain,
     title: "Advisory & Strategic Guidance",
     description: [
       "Token launch strategy and go-to-market positioning expertise",
@@ -43,7 +43,7 @@ const services = [
     deliverable: "Daily presence, follower growth, tweet-to-funnel conversion"
   },
   {
-    icon: Handshake,
+    icon: DollarSign,
     title: "VC & Liquidity Network Access",
     description: [
       "Direct access to our network of 20+ established VCs",
