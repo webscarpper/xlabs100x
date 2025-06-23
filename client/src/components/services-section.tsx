@@ -5,43 +5,71 @@ const services = [
   {
     icon: Users,
     title: "KOL & Influencer Management",
-    description: "We handle Web3-native influencers across multiple verticals: Network of over 500 KOLs from T1 to T3. Lowest prices and we continuously work with them. Reporting on reach, CTR, conversion for more trust.",
+    description: [
+      "Network of over 500 KOLs from T1 to T3 across multiple verticals",
+      "Lowest prices with continuous collaboration and relationship management",
+      "Detailed reporting on reach, CTR, and conversion metrics for transparency"
+    ],
     deliverable: "High-ROI influencer runs, without middlemen"
   },
   {
     icon: Zap,
     title: "Advisory & Strategic Guidance",
-    description: "Token launch strategy, go-to-market positioning. Unlimited experience with more than 50 projects built. High understanding of how to ensure smooth launches. Built countless communities long-term.",
+    description: [
+      "Token launch strategy and go-to-market positioning expertise",
+      "Unlimited experience with 50+ successfully launched projects",
+      "Proven methods to ensure smooth launches and long-term community growth"
+    ],
     deliverable: "smooth launch with no frontrunners, long term community growth"
   },
   {
     icon: Heart,
     title: "Community Building - Full-Stack Team",
-    description: "We embed a fully equipped community ops team into your project: Community Manager – voice of your brand across all platforms. Moderators – 24/7 active coverage on Discord & Telegram. Collab Managers – handle partnerships, whitelist swaps, AMA sourcing.",
+    description: [
+      "Community Manager as the voice of your brand across all platforms",
+      "24/7 active moderators providing coverage on Discord & Telegram",
+      "Collab Managers handling partnerships, whitelist swaps, and AMA sourcing"
+    ],
     deliverable: "Active, self-sustaining community + daily engagement growth"
   },
   {
     icon: Rocket,
     title: "Social Media Management",
-    description: "We don't just post, we engineer virality on Web3-native platforms: Scheduled content across X (Twitter), Farcaster, Lens. On-brand copywriting for threads, memes, announcements. Visual assets, motion graphics, trendjacking.",
+    description: [
+      "Scheduled content across X (Twitter), Farcaster, and Lens platforms",
+      "On-brand copywriting for threads, memes, and announcements",
+      "Visual assets, motion graphics, and trendjacking for maximum virality"
+    ],
     deliverable: "Daily presence, follower growth, tweet-to-funnel conversion"
   },
   {
     icon: Handshake,
     title: "VC & Liquidity Network Access",
-    description: "Connect with capital and liquidity: We got a network of more than 20 VCs. Warm intros to crypto-native VCs & angels. Pitch polishing + investor narrative coaching.",
+    description: [
+      "Direct access to our network of 20+ established VCs",
+      "Warm introductions to crypto-native VCs and angel investors",
+      "Pitch polishing and investor narrative coaching services"
+    ],
     deliverable: "Strategic intros and dealflow acceleration"
   },
   {
     icon: Network,
     title: "Strategic Web3 Connections (CEXs, DApps, Infra)",
-    description: "We plug you into the right circles — and the right stacks: Direct lines to tier 1/2 CEXs, token listing contacts, launchpads. Access to infra partners (RPCs, nodes, indexing, wallets). Intros to builders and L1/L2 ecosystems.",
+    description: [
+      "Direct lines to tier 1/2 CEXs, token listing contacts, and launchpads",
+      "Access to infrastructure partners (RPCs, nodes, indexing, wallets)",
+      "Introductions to builders and L1/L2 ecosystem partners"
+    ],
     deliverable: "Warm intros, listing pathways, and infra activation through trusted Web3 networks"
   },
   {
     icon: Code,
     title: "Full-Stack Dev Team",
-    description: "From frontend magic to backend architecture, our dev squad ships fast and scales clean: Frontend devs fluent in React, Tailwind, Next.js. Smart contract engineers (Solidity, Rust, Vyper). Backend / infra: Node.js, APIs, RPC endpoints, subgraphs.",
+    description: [
+      "Frontend developers fluent in React, Tailwind, and Next.js",
+      "Smart contract engineers specialized in Solidity, Rust, and Vyper",
+      "Backend infrastructure: Node.js, APIs, RPC endpoints, and subgraphs"
+    ],
     deliverable: "Fully deployed dApp or feature-ready stack built for speed, security & scale"
   }
 ];
@@ -84,9 +112,14 @@ export default function ServicesSection() {
                 <h3 className="text-2xl font-bold mb-4 text-[var(--neon-green)]">
                   {service.title}
                 </h3>
-                <p className="text-gray-300 mb-6">
-                  {service.description}
-                </p>
+                <ul className="text-gray-300 mb-6 space-y-2">
+                  {service.description.map((point, pointIndex) => (
+                    <li key={pointIndex} className="flex items-start">
+                      <span className="text-[var(--neon-green)] mr-2 mt-1">•</span>
+                      <span>{point}</span>
+                    </li>
+                  ))}
+                </ul>
                 <div className="bg-crypto-black rounded-lg p-4">
                   <p className="text-sm text-[var(--neon-green)] font-semibold">Deliverable:</p>
                   <p className="text-white">{service.deliverable}</p>
