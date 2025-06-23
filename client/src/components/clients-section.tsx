@@ -63,7 +63,7 @@ const clients = [
 
 export default function ClientsSection() {
   return (
-    <section id="clients" className="py-20 bg-crypto-black">
+    <section id="clients" className="pt-20 pb-32 bg-crypto-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.h2 
           className="text-4xl md:text-5xl font-black mb-6 max-w-3xl mx-auto text-center"
