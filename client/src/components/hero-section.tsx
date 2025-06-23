@@ -26,10 +26,10 @@ export default function HeroSection() {
           <img 
             src={titleLogo} 
             alt="100xlabs" 
-            className="w-auto h-160 md:h-256 lg:h-320 mx-auto"
+            className="w-auto h-72 md:h-112 lg:h-144 mx-auto"
           />
         </motion.div>
-        
+
         <motion.p 
           className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto"
           initial={{ opacity: 0, y: 30 }}
@@ -38,7 +38,7 @@ export default function HeroSection() {
         >
           Your catalyst for crypto growth. We turn emerging Web3 projects into market leaders through strategic marketing, community building, and industry connections.
         </motion.p>
-        
+
         <motion.div 
           className="flex flex-col sm:flex-row gap-4 justify-center"
           initial={{ opacity: 0, y: 20 }}
