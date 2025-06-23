@@ -12,14 +12,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section 
-      className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20"
-      style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(${heroImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      }}
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 bg-crypto-black"
     >
       {/* Animated Candlestick Chart Background */}
       <CandlestickChart />
