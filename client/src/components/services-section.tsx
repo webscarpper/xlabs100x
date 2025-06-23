@@ -109,7 +109,7 @@ export default function ServicesSection() {
                 <div className="w-12 h-12 bg-[var(--neon-green)] rounded-lg flex items-center justify-center mb-6">
                   <IconComponent className="text-crypto-black text-xl" size={20} />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-[var(--neon-green)]">
+                <h3 className="text-2xl font-bold mb-4 text-white">
                   {service.title}
                 </h3>
                 <ul className="text-gray-300 mb-6 space-y-2">
