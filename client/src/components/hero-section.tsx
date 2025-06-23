@@ -39,7 +39,7 @@ export default function HeroSection() {
         >
           <motion.button
             onClick={() => scrollToSection("services")}
-            className="bg-[var(--neon-green)] text-crypto-black px-8 py-4 rounded-xl font-bold text-lg hover:bg-[var(--dark-green)] transition-all"
+            className="border-2 border-[var(--neon-green)] text-[var(--neon-green)] px-8 py-4 rounded-xl font-bold text-lg hover:bg-[var(--neon-green)] hover:text-crypto-black transition-all"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
