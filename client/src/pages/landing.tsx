@@ -10,8 +10,8 @@ export default function Landing() {
     <div className="min-h-screen bg-crypto-black text-white">
       <Navigation />
       <HeroSection />
-      <ServicesSection />
       <ClientsSection />
+      <ServicesSection />
       
       {/* CTA Section */}
       <motion.section 
