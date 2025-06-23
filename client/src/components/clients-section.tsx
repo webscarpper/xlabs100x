@@ -65,14 +65,24 @@ export default function ClientsSection() {
   return (
     <section id="clients" className="py-20 bg-crypto-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.p 
-          className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto text-center"
+        <motion.h2 
+          className="text-3xl md:text-4xl font-bold text-white mb-6 max-w-3xl mx-auto text-center"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          Your catalyst for crypto growth. We turn emerging Web3 projects into market leaders through strategic marketing, community building, and industry connections.
+          Your catalyst for crypto growth
+        </motion.h2>
+        
+        <motion.p 
+          className="text-lg md:text-xl text-gray-300 mb-12 max-w-3xl mx-auto text-center"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.1 }}
+          viewport={{ once: true }}
+        >
+          We turn emerging Web3 projects into market leaders through strategic marketing, community building, and industry connections.
         </motion.p>
         
         <motion.div 
