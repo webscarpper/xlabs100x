@@ -96,7 +96,8 @@
   
   .client-card:hover {
     border-color: var(--neon-green);
-    box-shadow: 0 5px 20px rgba(34, 197, 94, 0.2);
+    box-shadow: 0 10px 30px rgba(34, 197, 94, 0.3);
+    transform: translateY(-5px);
   }
   
   .stat-gradient {
