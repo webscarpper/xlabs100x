@@ -39,7 +39,7 @@ export default function HeroSection() {
         >
           <motion.button
             onClick={() => scrollToSection("services")}
-            className="border-2 border-[var(--neon-green)] text-[var(--neon-green)] px-8 py-4 rounded-xl font-bold text-lg hover:bg-[var(--neon-green)] hover:text-crypto-black transition-all"
+            className="border-2 border-[var(--neon-green)] text-[var(--neon-green)] px-6 py-3 rounded-xl font-bold text-base hover:bg-[var(--neon-green)] hover:text-crypto-black transition-all"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -47,7 +47,7 @@ export default function HeroSection() {
           </motion.button>
           <motion.button
             onClick={() => scrollToSection("clients")}
-            className="border-2 border-[var(--neon-green)] text-[var(--neon-green)] px-8 py-4 rounded-xl font-bold text-lg hover:bg-[var(--neon-green)] hover:text-crypto-black transition-all"
+            className="border-2 border-[var(--neon-green)] text-[var(--neon-green)] px-6 py-3 rounded-xl font-bold text-base hover:bg-[var(--neon-green)] hover:text-crypto-black transition-all"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
