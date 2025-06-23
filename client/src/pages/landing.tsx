@@ -3,9 +3,13 @@ import HeroSection from "@/components/hero-section";
 import ServicesSection from "@/components/services-section";
 import ClientsSection from "@/components/clients-section";
 import Footer from "@/components/footer";
+import ContactModal from "@/components/contact-modal";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 export default function Landing() {
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-crypto-black text-white">
       <Navigation />
@@ -40,8 +44,8 @@ export default function Landing() {
           >
             Join the elite Web3 projects that have already achieved massive growth with our proven strategies.
           </motion.p>
-          <motion.a 
-            href="#contact" 
+          <motion.button 
+            onClick={() => setIsContactModalOpen(true)}
             className="border-2 border-[var(--neon-green)] text-white px-10 py-4 rounded-xl font-bold text-xl hover:bg-[var(--neon-green)] hover:text-crypto-black transition-all inline-block"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -51,11 +55,16 @@ export default function Landing() {
             whileTap={{ scale: 0.95 }}
           >
             Contact Us
-          </motion.a>
+          </motion.button>
         </div>
       </motion.section>
       
       <Footer />
+      
+      <ContactModal 
+        isOpen={isContactModalOpen} 
+        onClose={() => setIsContactModalOpen(false)} 
+      />
     </div>
   );
 }

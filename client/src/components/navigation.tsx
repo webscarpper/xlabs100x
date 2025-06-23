@@ -4,10 +4,12 @@ import { Menu, X } from "lucide-react";
 import { FaXTwitter } from "react-icons/fa6";
 import logoImage from "@assets/100xLabs LOGO full res_1750665480428.png";
 import titleLogo from "@assets/Untitled design (1)_1750668996300.png";
+import ContactModal from "./contact-modal";
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -66,7 +68,7 @@ export default function Navigation() {
             </button>
             <FaXTwitter className="text-gray-400 h-6 w-6 hover:text-[var(--neon-green)] transition-colors cursor-pointer" />
             <motion.button 
-              onClick={() => scrollToSection("contact")}
+              onClick={() => setIsContactModalOpen(true)}
               className="border-2 border-[var(--neon-green)] text-white px-6 py-2 rounded-xl font-bold hover:bg-[var(--neon-green)] hover:text-crypto-black transition-all"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -107,7 +109,10 @@ export default function Navigation() {
               </button>
               <FaXTwitter className="text-gray-400 h-6 w-6 hover:text-[var(--neon-green)] transition-colors cursor-pointer" />
               <button 
-                onClick={() => scrollToSection("contact")}
+                onClick={() => {
+                  setIsContactModalOpen(true);
+                  setIsMobileMenuOpen(false);
+                }}
                 className="border-2 border-[var(--neon-green)] text-white px-6 py-2 rounded-xl font-bold hover:bg-[var(--neon-green)] hover:text-crypto-black transition-all text-left w-fit"
               >
                 Contact Us
@@ -116,6 +121,11 @@ export default function Navigation() {
           </motion.div>
         )}
       </div>
+      
+      <ContactModal 
+        isOpen={isContactModalOpen} 
+        onClose={() => setIsContactModalOpen(false)} 
+      />
     </motion.nav>
   );
 }
