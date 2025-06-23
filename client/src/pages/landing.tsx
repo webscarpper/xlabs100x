@@ -42,7 +42,7 @@ export default function Landing() {
           </motion.p>
           <motion.a 
             href="#contact" 
-            className="bg-[var(--neon-green)] text-crypto-black px-10 py-4 rounded-xl font-bold text-xl hover:bg-[var(--dark-green)] transition-all transform hover:scale-105 inline-block"
+            className="border-2 border-[var(--neon-green)] text-white px-10 py-4 rounded-xl font-bold text-xl hover:bg-[var(--neon-green)] hover:text-crypto-black transition-all inline-block"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.6 }}
