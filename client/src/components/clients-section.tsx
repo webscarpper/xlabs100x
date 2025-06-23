@@ -72,7 +72,7 @@ export default function ClientsSection() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          Your catalyst for <span className="text-[var(--neon-green)]">crypto growth</span>
+          Your Catalyst for <span className="text-[var(--neon-green)]">Crypto Growth</span>
         </motion.h2>
         
         <motion.p 
