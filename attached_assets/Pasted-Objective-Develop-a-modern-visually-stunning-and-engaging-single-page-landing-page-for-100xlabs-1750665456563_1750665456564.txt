@@ -1,0 +1,83 @@
+Objective:
+Develop a modern, visually stunning, and engaging single-page landing page for "100xlabs," a Web3 marketing agency. The page should effectively showcase the agency's services, highlight client successes, and establish a strong brand presence.
+I. Branding & Overall Style:
+Agency Name: 100xlabs
+Logo:
+Use the stylized "X" from the provided image file: 100xLabs LOGO full res.png.
+This logo should be prominently placed, likely in the navigation bar and potentially in the footer.
+Visual Style: Modern, clean, professional, with a Web3/crypto aesthetic. Animations should be smooth and impactful. Ensure the page is responsive and looks great on desktop and mobile devices.
+II. Hero Section:
+Primary Visual:
+Feature the image WhatsApp Image 2025-06-23 at 09.52.05_39ead9f8.jpg (the glowing green X on a black background) as the central element or background of the hero section.
+Animation:
+Incorporate an dynamic animation involving financial candlestick charts.
+This animation should depict candlesticks (both red and green) forming or moving across the section, perhaps starting small and growing.
+The animation must culminate dramatically with the appearance of a very large green "god candle," signifying massive growth or success. This could be integrated with or appear behind/around the primary glowing X visual.
+The overall effect should be eye-catching and reinforce the "100x" concept.
+Headline/Tagline: Include a compelling headline that captures the essence of 100xlabs (e.g., "Amplifying Web3 Projects by 100x," "Your Catalyst for Crypto Growth," or similar – you can suggest options or let Replit's AI propose some based on the services).
+III. Services Section:
+Layout: Create a dedicated section that clearly lists and describes the services offered by 100xlabs. Use a card-based layout or distinct blocks for each service for readability.
+Content for each service (use the exact text provided):
+Service 1: KOL & Influencer Management
+Description: "We handle Web3-native influencers across multiple verticals: Network of over 500 KOLs from T1 to T3. Lowest prices and we continuously work with them. Reporting on reach, CTR, conversion for more trust."
+Deliverable: "High-ROI influencer runs, without middlemen"
+Service 2: Advisory & Strategic Guidance
+Description: "Token launch strategy, go-to-market positioning. Unlimited experience with more than 50 projects built. High understanding of how to ensure smooth launches. Built countless communities long-term."
+Deliverable: "smooth launch with no frontrunners, long term community growth"
+Service 3: Community Building - Full-Stack Team
+Description: "We embed a fully equipped community ops team into your project: Community Manager – voice of your brand across all platforms. Moderators – 24/7 active coverage on Discord & Telegram. Collab Managers – handle partnerships, whitelist swaps, AMA sourcing."
+Deliverable: "Active, self-sustaining community + daily engagement growth"
+Service 4: Social Media Management
+Description: "We don’t just post, we engineer virality on Web3-native platforms: Scheduled content across X (Twitter), Farcaster, Lens. On-brand copywriting for threads, memes, announcements. Visual assets, motion graphics, trendjacking."
+Deliverable: "Daily presence, follower growth, tweet-to-funnel conversion"
+Service 5: VC & Liquidity Network Access
+Description: "Connect with capital and liquidity: We got a network of more than 20 VCs. Warm intros to crypto-native VCs & angels. Pitch polishing + investor narrative coaching."
+Deliverable: "Strategic intros and dealflow acceleration"
+Service 6: Strategic Web3 Connections (CEXs, DApps, Infra)
+Description: "We plug you into the right circles — and the right stacks: Direct lines to tier 1/2 CEXs, token listing contacts, launchpads. Access to infra partners (RPCs, nodes, indexing, wallets). Intros to builders and L1/L2 ecosystems."
+Deliverable: "Warm intros, listing pathways, and infra activation through trusted Web3 networks"
+Service 7: Full-Stack Dev Team
+Description: "From frontend magic to backend architecture, our dev squad ships fast and scales clean: Frontend devs fluent in React, Tailwind, Next.js. Smart contract engineers (Solidity, Rust, Vyper). Backend / infra: Node.js, APIs, RPC endpoints, subgraphs."
+Deliverable: "Fully deployed dApp or feature-ready stack built for speed, security & scale"
+IV. Client Success / "ATH Stats From our Clients" Section:
+Title: "ATH Stats From Our Clients" (or a similar impactful title).
+Layout: Display each client's success metrics clearly, perhaps using cards or a grid.
+For each client, display the following:
+Project Title
+Market Cap (Mcap)
+X Followers
+Telegram (TG) Members
+An X (formerly Twitter) icon. This icon must be hyperlinked to the project's X account.
+Client Data & Links:
+AGIXBT
+Stats: 30 Mil Mcap, 20k X Followers, 5k TG Members
+X Link: https://x.com/agixbt
+Kaiko Studios
+Stats: 11 Mil Mcap, 20k X Followers, 3k TG Members
+X Link: https://x.com/KaikoHQ
+Trust Protocol AI
+Stats: 5 Mil Mcap, 12k X Followers, 7k TG Members
+X Link: https://x.com/TrustProtocolAI
+NoDev AI
+Stats: 6 Mil Mcap, 11k X Followers, 6k TG Members
+X Link: https://x.com/nodevsol
+Ez Money Services
+Stats: 1.6 Mil Mcap, 10k X Followers, 5k TG Members
+X Link: https://x.com/EzMoneyServices
+Quantum Trade
+Stats: 1.1 Mil Mcap, 8k X Followers, 4k TG Members
+X Link: https://x.com/QuantumTradePRO
+LFG
+Stats: 1.6 Mil Mcap, 6k X Followers, 3k TG Members
+X Link: https://x.com (as no specific project link provided)
+Floppa
+Stats: 1.2 Mil Mcap, 15k X Followers, 10k TG Members
+X Link: https://x.com (as no specific project link provided)
+V. Footer:
+Include basic footer information: Copyright 100xlabs (Year), and potentially links to social media if available (not specified, but common), or a simple contact email/method.
+VI. Technical Considerations for Replit AI (if applicable):
+Use HTML5, CSS3, and JavaScript for the structure, styling, and animations.
+Consider modern front-end technologies like React, Vue, or Next.js if they facilitate a better outcome for animations and structure, especially since "React, Tailwind, Next.js" are mentioned in your services.
+Ensure the landing page is fully responsive across all major devices (desktops, tablets, smartphones).
+Optimize for fast loading times and smooth animations.
+Prioritize clean, well-commented code.
